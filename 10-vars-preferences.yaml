@@ -18,3 +18,4 @@
         # 1st pref -> arguments
         # 2nd pref -> vars.yaml file
         # 3rd pref -> from prompt
+        # 4th pref -> inventory
