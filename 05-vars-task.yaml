@@ -5,8 +5,12 @@
     Trainer: "joindevops.com"
     Duration: "15hrs"
   tasks:
-  - name: print information
+  - name: print override information
     vars: # Task level variables
-      Course: "DevOps" # overriding
+      Course: "DevOps" # overriding Course comes from this task
     ansible.builtin.debug:
+      msg: "Hi, we are learning {{Course}} from trainer {{Trainer}}, Duration {{Duration}}."
+
+  - name: print information
+    ansible.builtin.debug: # Course comes from play level not overriding
       msg: "Hi, we are learning {{Course}} from trainer {{Trainer}}, Duration {{Duration}}."
