@@ -4,10 +4,10 @@
     WISHES: "Morning from PLAY variable"
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: WISHES
-    prompt: Please enter WISHES
-    private: false
+  # vars_prompt:
+  # - name: WISHES
+  #   prompt: Please enter WISHES
+  #   private: false
   tasks:
     - name: check preference
       # vars:
@@ -18,4 +18,6 @@
         # 1st pref -> arguments
         # 2nd pref -> Task variables
         # 3rd pref -> vars.yaml file
-        # 4th pref -> 
+        # 4th pref -> from prompt
+        # 5th pref ->
+        # 6th pref -> 
