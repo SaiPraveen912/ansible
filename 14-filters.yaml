@@ -23,3 +23,11 @@
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
 
+- name: remove duplicates
+  hosts: localhost
+  numbers: [1,2,2,3,3,4,4]
+  tasks:
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "{{ numbers | unique }}"
+
