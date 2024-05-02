@@ -46,9 +46,9 @@
   vars:
     my_dict: # this is called as dictionary or map or key/value pair
       Course: Ansible
-      Trainer: Sivakumar
+      Trainer: joindevops
       Duration: 120hrs
-  task:
+  tasks:
   - name: before convert
     ansible.builtin.debug:
       msg: "Before convert: {{ my_dict }}"
