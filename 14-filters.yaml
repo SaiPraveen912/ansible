@@ -3,4 +3,4 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: "Hello {{Course}}"
+      msg: "Hello {{course | default('Ansible') }}" # | default('Ansible') is filter.
