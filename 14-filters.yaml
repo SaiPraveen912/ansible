@@ -61,8 +61,8 @@
   hosts: localhost
   vars:
     my_list:
-    - {'key': 'Course', 'value': 'Ansible'}, 
-    - {'key': 'Trainer', 'value': 'joindevops'}, 
+    - {'key': 'Course', 'value': 'Ansible'} 
+    - {'key': 'Trainer', 'value': 'joindevops'}
     - {'key': 'Duration', 'value': '120hrs'}
   tasks:
   - name: before convert
